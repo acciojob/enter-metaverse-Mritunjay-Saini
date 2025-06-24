@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Enter Metaverse</title>
 </head>
 <body>
@@ -9,8 +10,9 @@
   <button id="enterBtn">Enter</button>
 
   <script>
-    document.getElementById("enterBtn").addEventListener("click", function() {
-      document.getElementById("status").outerHTML = "<h1 id='status'>Entered Metaverse</h1>";
+    document.getElementById("enterBtn").addEventListener("click", function () {
+      const statusPara = document.getElementById("status");
+      statusPara.innerHTML = "<h1>Entered Metaverse</h1>";
     });
   </script>
 
